@@ -26,11 +26,11 @@ export const Footer = () => {
        <div>
        <h2 className='text-[22px] font-semibold text-fuchsia-800 py-2 uppercase'>Follow Me</h2>
        <div className='flex space-x-4'>
-          <a className='text-white hover:text-fuchsia-800  transition-all duration-150 ease-in-out'href="">
+          <a className='text-white hover:text-fuchsia-800  transition-all duration-150 ease-in-out'href="https://github.com/yasithasanjula">
             <FaGithub />
           </a>
 
-          <a className='text-white hover:text-fuchsia-800  transition-all duration-150 ease-in-out'href="">
+          <a className='text-white hover:text-fuchsia-800  transition-all duration-150 ease-in-out'href="https://www.linkedin.com/in/yasitha-sanjula-herath-9a03b7250/">
             <FaLinkedin />
           </a>
 
@@ -38,11 +38,11 @@ export const Footer = () => {
             <FaTwitter />
           </a>
 
-          <a className='text-white hover:text-fuchsia-800  transition-all duration-150 ease-in-out'href="">
+          <a className='text-white hover:text-fuchsia-800  transition-all duration-150 ease-in-out'href="https://www.instagram.com/yasithasanjulaherath/">
             <FaInstagram />
           </a>
 
-          <a className='text-white hover:text-fuchsia-800  transition-all duration-150 ease-in-out'href="">
+          <a className='text-white hover:text-fuchsia-800  transition-all duration-150 ease-in-out' href="https://web.facebook.com/yasithasanjula.herath.1">
             <FaFacebook />
           </a>
         </div>
