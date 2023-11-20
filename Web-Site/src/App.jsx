@@ -1,11 +1,14 @@
-import { useState } from 'react'
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
+    <div className="bg-slate-900 ">
+      <h2>React App</h2>
+    </div>
       
     </>
   )
