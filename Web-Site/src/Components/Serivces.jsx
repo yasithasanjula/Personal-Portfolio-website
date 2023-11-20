@@ -5,3 +5,5 @@ export const Serivces = () => {
     <div>Serivces</div>
   )
 }
+
+export default Serivces
