@@ -3,11 +3,12 @@ import {AiFillGithub} from 'react-icons/ai';
 import {FaLinkedin} from 'react-icons/fa';
 import {FiTwitter } from 'react-icons/fi';
 import {FaInstagram } from 'react-icons/fa';
+import img from '../assets/yasitha.jpg';
 
 
 const Banner = () => {
   return (
-    <div className='lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg-text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center'>
+    <div className='lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center'>
         <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white '>
             <h1 className='text-[52px] font-semibold mb-8 leading-normal'>Welcome To <span className='text-fuchsia-500'> My Website</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repellat consequatur voluptates
@@ -36,6 +37,7 @@ const Banner = () => {
                 </div>
             </div>
         </div>
+        <img src={img} width={290} height={290} className='rounded-full border-2 p-1 border-fuchsia-500 img_glow' alt="" />
     </div>
   )
 }
