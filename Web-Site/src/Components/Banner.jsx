@@ -1,16 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {AiFillGithub} from 'react-icons/ai';
 import {FaLinkedin,FaFacebook,FaInstagram} from 'react-icons/fa';
 import {FiTwitter } from 'react-icons/fi';
 import img from '../assets/yasitha.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Banner = () => {
+    useEffect(() => {
+        AOS.init({
+            easing: 'ease-out-quart',
+            delay: 0,
+            duration: 750
+        })
+    },[])
+   
   return (
     <div className='lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center'>
         <div className='h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white '>
-            <h1 className='text-[52px] font-semibold mb-8 leading-normal'>Welcome To <span className='text-fuchsia-500'> My Website</span></h1>
-            <p> I'm a Computer Science student, Eastern University of Sri Lanka. Also a programmer and a blogger.
+            <h1 data-aos='fade-right'className='text-[52px] font-semibold mb-8 leading-normal uppercase'>Welcome To <span className='text-fuchsia-500'> My Website</span></h1>
+            <p data-aos='fade-left'> I'm a Computer Science student, Eastern University of Sri Lanka. Also a programmer and a blogger.
                 Interested in de-centralized application development. I have studied Computer Science, Cryptography, 
                 Computer Architecture ,game development and Web app development. Also an open-source enthusiast.
             </p>
@@ -40,7 +50,7 @@ const Banner = () => {
                 </div>
             </div>
         </div>
-        <img src={img} width={290} height={290} className='rounded-full border-2 p-1 border-fuchsia-500 img_glow' alt="" />
+        <img data-aos='fade-up' src={img} width={290} height={290} className='rounded-full border-2 p-1 border-fuchsia-500 img_glow' alt="" />
     </div>
   )
 }
