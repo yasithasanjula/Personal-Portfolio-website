@@ -1,17 +1,12 @@
+import React from 'react'
+import { Nav } from './Components/Nav'
 
-
-
-function App() {
-
-
+export const App = () => {
   return (
-    <>
-    <div className="bg-slate-900 ">
-      <h2>React App</h2>
+    <div className='bg-slate-900'>
+      <Nav />
     </div>
-      
-    </>
   )
 }
 
-export default App
+export default App;
